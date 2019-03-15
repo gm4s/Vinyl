@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Vinyl</string>
+    <string name="common_network_error">A network error occurred!</string>
+</resources>

@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-platform-android'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+apply from: '../config_module.gradle'
+
+android {
+
+    defaultConfig {
+        versionCode project.version_code
+        versionName = "$project.version_name"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    lintOptions {
+        quiet true
+        abortOnError true
+        warningsAsErrors true
+        lintConfig file(project.rootDir.path + "/app/lint-rules.xml")
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+        }
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFile 'proguard-rules.pro'
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${buildType.name}-freshdroid-${variant.versionName}.apk"
+        }
+    }
+}
+
+dependencies {
+    implementation project(':core')
+
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+
+    implementation "com.airbnb.android:lottie:$lottie_version"
+
+    testImplementation "org.mockito:mockito-core:$mockito_version"
+    testImplementation "org.robolectric:robolectric:$robolectric_version"
+    testImplementation "org.robolectric:shadows-multidex:$robolectric_shadows_multidex_version"
+    testImplementation "org.robolectric:shadows-play-services:$robolectric_shadows_play_services_version"
+    testImplementation "org.robolectric:shadows-support-v4:$robolectric_shadows_support_v4_version"
+    testImplementation "androidx.test:monitor:$test_monitor_version"
+    testImplementation "androidx.test:core:$test_core_version"
+    testImplementation "junit:junit:$junit_version"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}

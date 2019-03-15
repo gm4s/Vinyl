@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+            android:id="@+id/albumBackFrameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_regular"
+            tools:ignore="UselessParent">
+
+        <ImageView
+                android:id="@+id/albumIconBackImageView"
+                android:layout_width="@dimen/icon_size_regular"
+                android:layout_height="@dimen/icon_size_regular"
+                android:clickable="false"
+                android:focusable="false"
+                app:srcCompat="@drawable/ic_arrow_back"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

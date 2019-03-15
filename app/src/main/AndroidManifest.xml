@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="io.freshdroid.vinyl">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+            android:allowBackup="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:usesCleartextTraffic="true"
+            android:extractNativeLibs="false"
+            android:appCategory="productivity"
+            android:theme="@style/Vinyl"
+            android:name=".VinylApplication"
+            tools:targetApi="o">
+
+        <activity
+                android:name=".features.splashscreen.views.SplashScreenActivity"
+                android:screenOrientation="portrait"
+                android:label="@string/app_name"
+                android:theme="@style/Vinyl.Splashscreen"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="vinyl"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".features.home.views.HomeActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Vinyl.Home"/>
+
+        <activity android:name=".features.album.views.AlbumDetailsActivity"
+                  android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
