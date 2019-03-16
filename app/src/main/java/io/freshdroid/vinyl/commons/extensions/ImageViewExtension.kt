@@ -7,8 +7,8 @@ import android.widget.ImageView
 import androidx.annotation.DrawableRes
 import com.bumptech.glide.Priority
 import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestListener
-import io.freshdroid.vinyl.R
 import io.freshdroid.vinyl.commons.models.Picture
 import io.freshdroid.vinyl.core.glide.GlideApp
 
@@ -21,7 +21,7 @@ fun ImageView.loadPicture(picture: Picture) {
     GlideApp.with(this)
         .load(picture.large)
         .thumbnail(getThumbnailRequest(this, picture))
-        .placeholder(R.drawable.ic_music_library)
+        .transition(DrawableTransitionOptions.withCrossFade())
         .into(this)
 }
 
