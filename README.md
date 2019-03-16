@@ -1,7 +1,7 @@
 # Vinyl for Android™
 
 [![Kotlin](https://img.shields.io/badge/kotlin-1.3.21-519EF8.svg)](https://kotlinlang.org/) [![Java](https://img.shields.io/badge/java-1.8-5C819D.svg)](https://developer.android.com/guide/index.html)
-[![Min SDK](https://img.shields.io/badge/min%20SDK-21-lightgrey.svg)](http://developer.android.com/about/dashboards/index.html#Platform)
+[![Min SDK](https://img.shields.io/badge/min%20SDK-19-lightgrey.svg)](http://developer.android.com/about/dashboards/index.html#Platform)
 
 ## Modular Architecture :wrench:
 
@@ -122,7 +122,7 @@ Please follow the template [PULL_REQUEST_TEMPLATE](https://github.com/gm4s/Vinyl
 ## Android Version Support :iphone:
 Android fragmentation analytics --> [Platform Versions](http://developer.android.com/about/dashboards/index.html#Platform)
 
-* Min API 21 --> Kitkat : 5.0.x
+* Min API 19 --> Kitkat : 4.4.x
 * Max API 28 --> Oreo : 8.1.x
 
 ## Android Code Style Convention :watermelon:
