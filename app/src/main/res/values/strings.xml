@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Vinyl</string>
     <string name="common_network_error">A network error occurred!</string>
+    <string name="album_by">Album by %s</string>
+    <string name="number_track">1 track</string>
+    <string name="number_track_plural">%s tracks</string>
 </resources>
