@@ -115,8 +115,6 @@ $ git commit -am "[... your message ...]"
 ```
 *All commit message line will be cropped at 100 characters*
 
-**To see the commit message guideline --> [Click here](https://github.com/OnceApp/guidelines/wiki/commits)**
-
 ### Formatting pull request
 
 Please follow the template [PULL_REQUEST_TEMPLATE](https://github.com/gm4s/Vinyl/blob/master/.github/PULL_REQUEST_TEMPLATE.md) when you create a new pull request.
