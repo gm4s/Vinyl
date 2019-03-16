@@ -25,6 +25,16 @@
         <item name="android:windowBackground">@color/background_dark</item>
     </style>
 
+    <style name="Vinyl.AlbumDetails">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/immersive_bars</item>
+        <item name="android:navigationBarColor">@color/immersive_bars</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+    </style>
+
     <style name="Vinyl.Splashscreen">
         <item name="android:statusBarColor">@color/immersive_bars</item>
         <item name="android:navigationBarColor">@color/immersive_bars</item>

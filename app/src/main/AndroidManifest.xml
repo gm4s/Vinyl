@@ -44,7 +44,8 @@
                   android:theme="@style/Vinyl.Home"/>
 
         <activity android:name=".features.album.views.AlbumDetailsActivity"
-                  android:screenOrientation="portrait"/>
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Vinyl.AlbumDetails"/>
 
     </application>
 
