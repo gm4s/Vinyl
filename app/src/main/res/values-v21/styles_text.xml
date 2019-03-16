@@ -3,22 +3,26 @@
 
     <style name="DarwinRegularCaption" parent="@style/TextAppearance.AppCompat.Caption">
         <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0</item>
         <item name="android:fontFamily">@font/darwin_ess_alt_regular</item>
     </style>
 
     <style name="DarwinBoldButton" parent="@style/TextAppearance.AppCompat.Button">
         <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.1</item>
         <item name="textAllCaps">true</item>
         <item name="android:fontFamily">@font/darwin_ess_alt_bold</item>
     </style>
 
     <style name="DarwinSemiBoldSubtitle2" parent="@style/TextAppearance.AppCompat.Title">
         <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.1</item>
         <item name="android:fontFamily">@font/darwin_ess_alt_semi_bold</item>
     </style>
 
     <style name="DarwinRegularSubtitle1" parent="@style/TextAppearance.AppCompat.Title">
         <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.15</item>
         <item name="android:fontFamily">@font/darwin_ess_alt_regular</item>
     </style>
 
@@ -34,31 +38,37 @@
 
     <style name="DarwinSemiBoldH6" parent="@style/TextAppearance.AppCompat.Display4">
         <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0.1</item>
         <item name="android:fontFamily">@font/darwin_ess_alt_semi_bold</item>
     </style>
 
     <style name="DarwinBoldH5" parent="@style/TextAppearance.AppCompat.Display4">
         <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0</item>
         <item name="android:fontFamily">@font/darwin_ess_alt_bold</item>
     </style>
 
     <style name="DarwinBoldH4" parent="@style/TextAppearance.AppCompat.Display4">
         <item name="android:textSize">34sp</item>
+        <item name="android:letterSpacing">0</item>
         <item name="android:fontFamily">@font/darwin_ess_alt_bold</item>
     </style>
 
     <style name="DarwinRegularH3" parent="@style/TextAppearance.AppCompat.Display3">
         <item name="android:textSize">48sp</item>
+        <item name="android:letterSpacing">0</item>
         <item name="android:fontFamily">@font/darwin_ess_alt_regular</item>
     </style>
 
     <style name="DarwinLightH2" parent="@style/TextAppearance.AppCompat.Display2">
         <item name="android:textSize">60sp</item>
+        <item name="android:letterSpacing">-0.5</item>
         <item name="android:fontFamily">@font/darwin_ess_alt_light</item>
     </style>
 
     <style name="DarwinLightH1" parent="@style/TextAppearance.AppCompat.Display1">
         <item name="android:textSize">98sp</item>
+        <item name="android:letterSpacing">-1.5</item>
         <item name="android:fontFamily">@font/darwin_ess_alt_light</item>
     </style>
 

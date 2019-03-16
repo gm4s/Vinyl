@@ -2,23 +2,12 @@
 
     <!-- Base application theme. -->
     <style name="Vinyl" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:colorPrimary">@color/primary</item>
         <item name="android:colorBackground">@color/background_light</item>
-        <item name="android:colorAccent">@color/accent</item>
-        <item name="android:navigationBarColor">@color/background_super_dark</item>
-        <item name="android:statusBarColor">@color/background_super_dark</item>
         <item name="android:textColorHint">@color/hint_disabled_dark</item>
         <item name="android:windowBackground">@color/background_light</item>
-        <item name="android:windowAllowEnterTransitionOverlap">true</item>
-        <item name="android:windowAllowReturnTransitionOverlap">true</item>
-        <item name="android:windowSharedElementsUseOverlay">false</item>
-        <item name="android:colorEdgeEffect">@color/mid_grey</item>
     </style>
 
     <style name="Vinyl.Home">
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@color/immersive_bars</item>
-        <item name="android:navigationBarColor">@color/immersive_bars</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -26,9 +15,6 @@
     </style>
 
     <style name="Vinyl.AlbumDetails">
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@color/immersive_bars</item>
-        <item name="android:navigationBarColor">@color/immersive_bars</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -36,8 +22,6 @@
     </style>
 
     <style name="Vinyl.Splashscreen">
-        <item name="android:statusBarColor">@color/immersive_bars</item>
-        <item name="android:navigationBarColor">@color/immersive_bars</item>
         <item name="android:windowBackground">@color/background_dark</item>
     </style>
 
