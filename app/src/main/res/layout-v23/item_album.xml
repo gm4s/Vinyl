@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ImageView
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
-        android:id="@+id/albumImageView"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        tools:srcCompat="@tools:sample/avatars"/>
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_tiny"
+        tools:background="@color/background_dark">
+
+    <ImageView
+            android:id="@+id/albumImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            tools:srcCompat="@tools:sample/avatars"/>
+
+    <TextView
+            android:id="@+id/albumTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary_light"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:layout_marginEnd="@dimen/margin_regular"
+            android:layout_marginStart="@dimen/margin_regular"
+            android:textAppearance="@style/DarwinSemiBoldH6"/>
+
+    <TextView
+            android:id="@+id/artistTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary_light"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginEnd="@dimen/margin_regular"
+            android:layout_marginStart="@dimen/margin_regular"
+            android:textAppearance="@style/DarwinRegularBody1"/>
+
+</LinearLayout>
