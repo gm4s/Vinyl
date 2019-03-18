@@ -1,6 +1,8 @@
 # Vinyl for Android™
 
-[![Kotlin](https://img.shields.io/badge/kotlin-1.3.21-519EF8.svg)](https://kotlinlang.org/) [![Java](https://img.shields.io/badge/java-1.8-5C819D.svg)](https://developer.android.com/guide/index.html)
+[![Build Status](https://app.bitrise.io/app/8b54ef62ebdfcc75/status.svg?token=Q9jQ1jts6qNvpcvLTwf0PQ)](https://app.bitrise.io/app/8b54ef62ebdfcc75)
+[![Kotlin](https://img.shields.io/badge/kotlin-1.3.21-519EF8.svg)](https://kotlinlang.org/) 
+[![Java](https://img.shields.io/badge/java-1.8-5C819D.svg)](https://developer.android.com/guide/index.html)
 [![Min SDK](https://img.shields.io/badge/min%20SDK-19-lightgrey.svg)](http://developer.android.com/about/dashboards/index.html#Platform)
 
 ## Modular Architecture :wrench:
